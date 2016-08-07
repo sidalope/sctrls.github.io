@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Busy Bee</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script
+			  src="https://code.jquery.com/jquery-2.2.4.min.js"
+			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div class="container-fluid">
+<!--Title-->
+		<div class="row">
+			<h1 class="col-xs-12 title">Busy Bee</h1>
+		</div>
+<!--Navigation-->
+		<nav class="navbar navbar-fixed-top">
+<!--Brand anchor and toggle button (for mobile)-->
+			<div class="brand-n-toggle">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainCollapsingNavbar">
+				<!-- class="navbar-toggler hidden-md" type="button" data-toggle="collapse" data-target="#mainCollapsingNavbar"> -->
+					<span class="sr-only">toggle navigation menu</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<a class="navbar-brand" href="https://alessandrobisiani.github.io">Alessandro Bisiani <span class="sr-only">(current)</span></a>
+			</div>
+<!--Nav links excluding brand-->
+    		<div class="collapse navbar-collapse" id="mainCollapsingNavbar">
+				<ul class="nav navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+					<li>
+						<a class="nav-link" href="https://github.com/alessandrobisiani">GitHub</a>
+					</li>
+					<li>
+						<a class="nav-link" href="https://www.linkedin.com/in/alessandrobisiani">LinkedIn</a>
+					</li>
+				</ul>
+    		</div>
+		</nav>
+	</div>
+<!--Blog-->	
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="panel panel-default">
+					<div class="panel-heading"><h4 class="panel-title">Reinforcement Learning Simulator - June 2015</h4></div>
+					<div class="panel-body ">
+
+						<a href="pictures/rlsim_snapshot.png">
+							<img class="img-responsive col-sm-6" src="pictures/rlsim_snapshot.png">
+						</a>
+						<p class="col-sm-6">
+							My thesis project at City University London.
+							Single agent reinforcement learning simulator in Java. Made to be applicable over a wide range of experiment sizes and complexities. Allows the arbitrary definition of an abstract environment model and a reward function. Includes Q-learning and SARSA algorithms runnable with ε-greedy or softmax policies. A pedagogical and practical tool for students and researchers that would allow observation of the process of learning, and allow convenient exportation of learning data and experiment state saving. 
+						</p>
+						<p class="col-sm-6"> 
+							Still missing: Multi-agent learning, multiple initial and goal states, GUI cleanup (especially for the save funtion), sensible refactor to support simple algorithm plugins.
+						</p>
+					</div>
+
+					<div class="panel-footer" align="right">
+						<img src="pictures/GitHub-Mark-32px.png">
+						<a href="https://github.com/AlessandroBisiani/RlSim">Link to public repo</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+
+<!--BLOG TEMPLATE-->
+<!--
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="panel panel-default">
+					<div class="panel-heading"><h4 class="panel-title">Reinforcement Learning Simulator - June 2015</h4></div>
+					<div class="panel-body ">
+
+						<a href="pictures/rlsim_snapshot.png">
+							<img class="img-responsive col-sm-6" src="pictures/rlsim_snapshot.png">
+						</a>
+						<p class="col-sm-6">
+							My thesis project at City University London.
+							Single agent reinforcement learning simulator in Java. Made to be applicable over a wide range of experiment sizes and complexities. Allows the arbitrary definition of an abstract environment model and a reward function. Includes Q-learning and SARSA algorithms runnable with ε-greedy or softmax policies. A pedagogical and practical tool for students and researchers that would allow observation of the process of learning, and allow convenient exportation of learning data and experiment state saving. </p>
+						<p class="col-sm-6"> 
+							Still missing: Multi-agent learning, multiple initial and goal states, GUI cleanup (especially for the save funtion), sensible refactor to support simple algorithm plugins.
+						</p>
+						
+					</div>
+					<div class="panel-footer" align="right">
+						<img src="GitHub-Mark/PNG/GitHub-Mark-32px.png">
+						<a href="https://github.com/AlessandroBisiani/RlSim"> Link to public repo</a>
+					</div>	
+				</div>
+			</div>
+		</div>
+-->
+
+	</div>
+</body>
+</html>
