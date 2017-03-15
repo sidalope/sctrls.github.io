@@ -1,10 +1,10 @@
-function myMap(){
+
+function initMap() {
 	var mapOptions = {
-		center: new google.maps.LatLng(40.783909, -73.965228),
-		zoom: 10,
-		mapTypeId: google.maps.mapTypeId.HYBRID
+		center: {lat: 40.783909, lng:-73.965228},
+		zoom: 13
 	}
-	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 }
 
 function scrivi(){

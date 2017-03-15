@@ -4,7 +4,7 @@
 	<title>Mappa</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="css/bootstrap.min.css">	
 	<link rel="stylesheet" href="css/style.css">
 	<script
 			  src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -12,26 +12,62 @@
 			  crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/mymapjs.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn_H1XMAI_ButwqgT7t9L4mxTlXP5-tdA&callback=initMap"
-    async defer></script>
+	
 
 <!-- Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
+<div class="container-fluid">
+<!--Title-->
+		<div class="row">
+			<h1 class="col-xs-12 title">BZ</h1>
+		</div>
+<!--Navigation-->
+		<nav class="navbar navbar-fixed-top">
+<!--Brand anchor and toggle button (for mobile)-->
+			<div class="brand-n-toggle">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainCollapsingNavbar">
+				<!-- class="navbar-toggler hidden-md" type="button" data-toggle="collapse" data-target="#mainCollapsingNavbar"> -->
+					<span class="sr-only">toggle navigation menu</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<a class="navbar-brand" href="https://alessandrobisiani.github.io">Alessandro Bisiani <span class="sr-only">(current)</span></a>
+			</div>
+<!--Nav links excluding brand-->
+    		<div class="collapse navbar-collapse" id="mainCollapsingNavbar">
+				<ul class="nav navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Portfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="mappa.html">Mappa</a>
+					</li>
+					<li>
+						<a class="nav-link" href="https://github.com/alessandrobisiani">GitHub</a>
+					</li>
+					<li>
+						<a class="nav-link" href="https://www.linkedin.com/in/alessandrobisiani">LinkedIn</a>
+					</li>
+				</ul>
+    		</div>
+		</nav>
+</div>
 <div class="container-fluid">
 	<div class="row">
-		<div id="map" class="col-xs-12 test"> <!--style="width:600px;height:400px"-->
-			<!-- <h1>Here there be texts.</h1> -->
-			<script type="text/javascript">myMap();</script> 
-			
-		</div>s
-		<script type="text/javascript">scrivi();</script>
+		<div id="map-container" class="col-md-10 col-md-offset-1">
+			<div id="map" class="col-md-12"></div>
+			<script>initMap();</script>
+		<!-- <script>scrivi();</script> -->
+		</div>
 	</div>
 </div>
 	
+<script async defer src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDnj3i_Ic4DonCTSYGUiyTkip_XGWMdNeE&v=3&sensor=false&callback=initMap"></script>
 
 </body>
 
