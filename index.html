@@ -41,38 +41,49 @@
 	</nav>
 
 <!-- Title -->
-	<section class="container">
-		<div class="row align-items-center justify-content-center">
-			<h1 id="title" class="text-center col-6">Factotum</h1>
+	<section class="container-fluid">
+		<div class="row align-items-center justify-content-center ">
+			<h1 id="title" class="text-center">Factotum</h1>
 		</div>
 	</section>	
 
 <!-- Blog -->
-	<section class="container">
-		<div class="row justify-content-center">
-			<div class="card col-12 col-sm-10 col-md-8 text-center">
+	<div class="container">
+		<section class="row justify-content-center">
+			<div class="card mb-4 col-md-8">
+				
+					<img class="img card-img-top" src="images/c-n-h-sample.png" alt="Card image cap">
+				
 				<div class="card-body">
-					<h4 class="card-header">Reinforcement Learning Simulator - June 2015</h4>
-					<img src="images/rlsim_snapshot.png" class="card-img-top" alt="RlSim">
-
-					<!-- <a href="images/rlsim_snapshot.png" class="card-link">
-						<img class="img-responsive" src="images/rlsim_snapshot.png">
-					</a> -->
-
+					<h5 class="card-title">Another example</h5>
 					<p class="card-text">
-						My thesis project at City University London.
-						Single agent reinforcement learning simulator in Java. Made to be applicable over a wide range of experiment sizes and complexities. Allows the arbitrary definition of an abstract environment model and a reward function. Includes Q-learning and SARSA algorithms runnable with ε-greedy or softmax policies. A pedagogical and practical tool for students and researchers that would allow observation of the process of learning, and allow convenient exportation of learning data and experiment state saving. 
-						Still missing: Multi-agent learning, multiple initial and goal states, GUI cleanup (especially for the save funtion), sensible refactor to support simple algorithm plugins.
+						This example has the following features:
+						<ul>
+							<li>the first</li>
+							<li>the second</li>
+							<li>the third</li>
+						</ul>
 					</p>
+					<p class="card-text"><small class="text-muted">Last updated 01/2019</small></p>
 				</div>
-
-				<div class="card-footer" align="right">
-					<img src="images/GitHub-Mark-32px.png">
-					<a href="https://github.com/AlessandroBisiani/RlSim">Link to public repo</a>
-				</div>	
 			</div>
-		</div>
-	</section>
+		</section>
+
+		<section class="row justify-content-center">
+			<div class="card mb-4 col-md-8">
+				<img class="card-img-top" src="images/rlsim_snapshot.png" alt="Card image cap">
+				<div class="card-body">
+					<h5 class="card-title">Reinforcement Learning Simulator - June 2015</h5>
+					<p class="card-text">My thesis project at City University London.
+							Single agent reinforcement learning simulator in Java. Made to be applicable over a wide range of experiment sizes and complexities. Allows the arbitrary definition of an abstract environment model and a reward function. Includes Q-learning and SARSA algorithms runnable with ε-greedy or softmax policies. A pedagogical and practical tool for students and researchers that would allow observation of the process of learning, and allow convenient exportation of learning data and experiment state saving. 
+							Still missing: Multi-agent learning, multiple initial and goal states, GUI cleanup (especially for the save funtion), sensible refactor to support simple algorithm plugins.
+						</p>
+					<p class="card-text"><small class="text-muted">Last updated 07/2015</small></p>
+				</div>
+			</div>
+		</section>
+
+	</div>
 		
 <!-- Bootstrap 4 -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
