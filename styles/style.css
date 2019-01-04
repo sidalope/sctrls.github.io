@@ -3,13 +3,21 @@
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
+	/* border: 1px solid red; */
 }
 
-* {
-	/*
-	border: 1px solid red;
-	*/
+body {
+	margin: 0 auto;
+	line-height: 1.5;
 }
+
+.card-body{
+	padding: 10px 10px;
+}
+
+/* .container {
+	max-width: 50em;
+} */
 
 .nav-link {
 	color: black;
@@ -17,12 +25,20 @@
 }
 
 .navbar .navbar-toggle .icon-bar {
-    background-color: black;
+	background-color: black;
+	border: 1px solid red;
 }
 
 .navbar {
 	background-color: white;
 	font-family: 'Lato', sans-serif;
+	max-width: 100%;
+}
+
+#mainNavigation {
+	background-color: white;
+	font-family: 'Lato', sans-serif;
+	max-width: 100%;
 }
 
 .navbar-brand {
@@ -30,17 +46,17 @@
 	font-weight: 400;
 }
 
-.title {
-	font-size: 90px; 
-	text-align: center;
-	margin-bottom: 70px;
-	margin-top: 70px;
-	/* 
-	max-width: 280px;
-	flex-grow: 1;
-	*/
+#title {
+	font-size: 90px;
+	margin-bottom: 80px;
+	margin-top: 80px;
+	
+	/* max-width: 280px;
+	flex-grow: 1; */
+	
 	font-family: 'Pacifico', Cursive;
 }
+
 
 
 /*
