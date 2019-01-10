@@ -12,21 +12,34 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 	
     <link rel="stylesheet" href="styles/sidebar-styles.css">
+
+    <!-- <link rel="stylesheet" href="js/sidebar.js"> -->
+    
     <title>Sidebar Template</title>
 </head>
 <body>
     <div id="primary-container">
-                   
-        <nav id="navbar" class="">
-            <h1>Alessandro Bisiani</h1>
-            <ul>
-                <li><a href="index.html">Blog</a></li>
-                <li><a href="#">Lists</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+
+        <nav id="navbar">        
+            <div id="title-box" class="flexbox collapsible-nav-toggle">
+                <h1><a href="index.html">Alessandro Bisiani</a></h1>
+                <span>
+                    <button id="nav-collapse-button">
+                        <i class="fas fa-folder-open"></i></button>
+                </span>
+            </div> 
+
+            <div id="nav-links" class="flexbox">
+                <ul>
+                    <li><a class="active" href="sidebar.html">Blog</a></li>
+                    <li><a href="sidebar.html">Lists</a></li>
+                    <li><a href="sidebar.html">Projects</a></li>
+                    <li><a href="sidebar.html">Contact</a></li>
+                </ul>
+            </div> 
         </nav>
         
+
         <div id="content-box">
             <main>
                 <h2>factotum</h2>
@@ -47,6 +60,7 @@
 
     </div>
 
+    <script type="text/javascript" src="js/sidebar.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
     <srcript src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->

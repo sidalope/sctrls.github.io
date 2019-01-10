@@ -1,5 +1,5 @@
 * {
-    /* border: solid 1px #ee3e64;; */
+    /* border: solid 1px #ee3e64; */
     /* #44accf */
     /* #b7d84b */
     /* #ec008c hot pink*/
@@ -7,6 +7,10 @@
     /* #12a7d light blue */
     /* #00e8b9 bright teal */
 }
+
+/* * * {
+    background-color: #fcfcfc;
+} */
 html {
     margin: 0 0;
     padding: 0 0;
@@ -14,14 +18,13 @@ html {
 
 body {
     margin-top: 0 2em;
-    padding: 4em 1em;
+    padding: 0 1em 4em;
     line-height: 1.6;
     font-family: 'Lato', sans-serif;
     font-size: 0.9em;
     font-weight: 350;
     color: #555;
-    background-color: white;
-    background-color: #fbfbfb;
+    background-color: #fcfcfc;
 }
 
 h1,
@@ -33,7 +36,8 @@ strong {
 }
 
 h2 {
-    color: #00e8b9;
+    /* color: #00e8b9; */
+    color: #ff7149;
 }
 
 div {
@@ -44,10 +48,9 @@ div {
 main {
     max-width: 50em;
     /* float: left; */
-    margin: 0 0;
+    margin: 2rem 1rem 5rem;
     /* border: solid 1px #ee3e64; */
-    margin: 1rem 1rem;
-    padding: 1rem 1rem;
+    padding: 0rem 1rem;
 }
 
 main > h2 {
@@ -63,12 +66,12 @@ main article {
     margin-top: 4.5rem;
 }
 
-#content-box {
+button:focus {
+    outline: 0;
+}
+
+.flexbox {
     display: flex;
-    justify-content: center;
-    float: left;
-    width: 100%;
-    /* border: 1px solid red; */
 }
 
 #primary-container {
@@ -78,35 +81,59 @@ main article {
     /* border: solid 1px #b7d84b; */
  } 
 
+ #content-box {
+    display: flex;
+    justify-content: center;
+    float: left;
+    width: 100%;
+
+}
+
 #navbar {
     display: flex;
     flex-flow: column;
     min-width: 140px;
     max-width: 140px;
-    height: 100vh;
+    height: 100%;
     float:left;
     /* border: solid 1px #44accf; */
     justify-content: flex-start;
     margin: 1rem 1rem;
-
+    background-color: #fcfcfc;
+    position: sticky;
+    left: 0;
+    top: 2em;
+    
 }
 
-#navbar * {
+/* #navbar * {
     /*
     TODO: Find out if this can be optimized.
     This is sexy, but slow as hell.
     padding: 1vh 5px;
     margin: 1vh 0; */
     /* padding: 5px 0; */
-    margin: 1rem 1rem;
+/*
+} 
+*/
+
+#nav-collapse-button {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    font-size: 1.3em;
+    color: #ee3e64;
+    display: none;
 }
 
-#navbar > h1 {
+#navbar > div > h1 {
     text-align: right;
-    font-weight: 400;
+    font-weight: 600;
     
 }
-#navbar > ul {
+
+#navbar > div > ul {
     display: flex;
     flex-flow: column;
     list-style-type: none;
@@ -114,19 +141,41 @@ main article {
     text-align: right;
     font-weight: 350;
     margin: 0;
+}
 
+#navbar li {
+    padding: 0.4rem;
 }
 
 #navbar a {
     text-decoration: none;
-    color: #ec008c;
     margin: 0;
     padding: 0;
+    color: #ec008c;
     /* border: solid 1px #44accf; */
 }
 
-#navbar a:hover , #navbar a:active{
-    color: #ee3e64
+#navbar h1 a {
+    color: #ee3e64;
+}
+
+#navbar a:hover, #navbar a:active{
+    /* color: #ee3e64 */
+    color: #ff7149;
+    text-decoration: underline;
+}
+#navbar h1 a:hover {
+    color: #ff7149;
+    text-decoration: none;
+}
+
+#title-box {
+    margin: 0;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: flex-end;
 }
 
 @media only screen and (max-width: 650px) {
@@ -135,16 +184,30 @@ main article {
     }
     
     main, #navbar {
-        padding-top: 20px;
+        padding: 3rem auto;
     }
 
     main article > h3 {
         text-align: center;
     }
 
+    #navbar h1 {
+        margin-right: 0em;
+    }
+    #navbar i {
+        margin: 0 1rem;
+    }
+
+    #nav-collapse-button {
+        display: inline;
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
     #primary-container {
         flex-flow: column;
-        justify-content: center;
+        /* justify-content: center; */
     }
 
     #navbar {
@@ -153,22 +216,53 @@ main article {
         /* max-width: 100%; */
         position: fixed;
         top: 0;
-        right: 3rem;
-        background-color: white;
         margin: 0;
-
+        flex-flow: column;
+        align-items: flex-end;
     }
 
-    #navbar > ul {
+    #navbar > div > ul {
         flex-flow: row;
         justify-content: flex-end;
+        align-items: center;
+        margin: 0;
     }
 
     #navbar li {
-        margin: 1rem 1.4rem;
+        margin: 0 1.4rem;
     }
-/*     
-    #navbar a {
-        display: block;
-    } */
+
+    #title-box {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #nav-links {
+        display: none;
+    }
+}
+/* 
+@media only screen and (max-width: 450px){
+
+    #navbar > div{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #navbar > div > ul {
+        display: none;
+        flex-flow: column;
+        /* list-style-type: none; */
+        /*border: solid 1px #44accf; 
+        text-align: center;
+        margin: 0; */
+    /*}
+    
+} */
+
+@media only screen and (min-width: 651px) {
+    #nav-links {
+        display: flex !important; 
+    }
 }
