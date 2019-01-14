@@ -1,0 +1,231 @@
+/* 
+    font-family: 'Staatliches', cursive;
+    font-family: 'Merriweather', serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Crimson Text', serif;
+ */
+
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    font-weight: 350;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    background-color: #fcfcfc;
+    /* display: flex; */
+    font-family: 'Merriweather', serif;
+    font-family: 'Crimson Text', serif;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+h1,
+h2,
+a {
+    color: #ee3e64;
+}
+h1, 
+h2, 
+h3, 
+h4 {
+    font-family: 'Staatliches', cursive;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+a:hover{
+    text-decoration: none;
+
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* DEFAULTS */
+
+main{
+    grid-area: main;
+    margin: 3em 0;
+}
+
+footer{
+    grid-area: footer;
+    height: 4em;
+    text-align: center;
+    background-color: #262626;
+}
+footer * {
+    color: white;
+}
+
+article{
+    margin-bottom: 5em;
+}
+
+p {
+    margin-top: 1em;
+}
+
+
+#sidebar {
+    /* border: 1px solid #b7d84b; */
+    background-color: #262626;
+    width: 35px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 1em 0;
+    align-items: flex-start;
+    align-items: center;
+}
+#sidebar > * {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #fcfcfc;
+}
+#sidebar > h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0 2px;
+    text-decoration: underline cyan;
+    border-left: 1px solid cyan;
+    color: #ee3e64;
+    
+}
+#sidebar li{
+    display: inline;
+    margin: 0.5em 0;
+    /* border: 2px solid cyan; */
+    border-left: 1px solid cyan;
+}
+#sidebar a {
+    color: #ee3e64;
+    font-family: 'Staatliches', cursive;
+}
+#sidebar a:hover{
+    color: #44accf;
+}
+
+
+#factotumWrapper {
+    display: flex;
+    grid-area: title;
+    justify-content: center;
+    align-items: center;
+}
+#factotumWrapper > h2{
+    /* font-size: 20vw; */
+    font-size: 90px;
+}
+
+
+#mainWrapper {
+    display: grid;
+    width: 100vw;
+    border-right: 3px solid #ee3e64;
+    grid-template-columns: 35px [left-gutter] 15% [content] auto [right-gutter] 15%;
+    grid-template-rows: 20vh auto;
+    grid-template-areas:
+        ". . title ."
+        ". . main ."
+        ". footer footer footer"
+}
+
+@media only screen and (max-width:767px){
+    #mainWrapper{
+        grid-template-columns: 35px [left-gutter] 10% [content] auto [right-gutter] 10%;
+    }
+}
+
+@media only screen and (max-width:575px){
+    #mainWrapper{
+        grid-template-columns: 35px [left-gutter] 5% [content] auto [right-gutter] 5%;
+    }
+}
