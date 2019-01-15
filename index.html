@@ -1,37 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-gb" dir="ltr">
 <head>
 <title>Ale Bisiani</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!-- Bootstrap 4 CSS-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Merriweather|Roboto+Slab|Staatliches" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Roboto+Slab|Staatliches" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Muli|Noto+Serif+JP|Playfair+Display|Raleway|Roboto+Mono|Slabo+27px|Source+Sans+Pro|Thasadith|Ubuntu|Yeseva+One|Assistant" rel="stylesheet"> 
 
 <link rel="stylesheet" href="styles/style-v030.css">
 </head>
 <body>
     
-    <nav id="sidebar">
-        <h1>Ale Bisiani</h1>  
-        <ul>
-            <li><a class="active" href="sidebar.html">Blog</a></li>
-            <li><a href="sidebar.html">Lists</a></li>
-            <li><a href="sidebar.html">Projects</a></li>
-            <li><a href="sidebar.html">Contact</a></li>
-        </ul>
-        <!-- <span id="footerAllowance"></span>    -->
-                   
+    <nav class="v-sidebar v-sidebar--dark">
+        <h1 class="v-sidebar__title v-sidebar__title--orange-cyan">Alessandro Bisiani</h1>  
+        <ul class="v-sidebar__list">
+            <li class="vertical-li li-vert-ltr--cyan">
+                <a class="a--orange-cyan a--staatliches-font active" href="index.html">Blog</a>
+            </li>
+            <li class="vertical-li li-vert-ltr--cyan">
+                <a class="a--orange-cyan a--staatliches-font" href="lists.html">Lists</a>
+            </li>
+            <li class="vertical-li li-vert-ltr--cyan dropdown">
+                <a class="a--orange-cyan a--staatliches-font" href="projects.html">Projects</a>
+                <div class="dropdown__nav-content">
+                    <a class="a--orange-cyan a--staatliches-font" href="index-v010">ale.io V0.10</a>
+                    <a class="a--orange-cyan a--staatliches-font" href="index-v011">ale.io V0.11</a>
+                    <a class="a--orange-cyan a--staatliches-font" href="index-v020">ale.io V0.20</a>
+                    
+                </div>
+            </li>
+            <li class="vertical-li li-vert-ltr--cyan">
+                <a class="a--orange-cyan a--staatliches-font" href="contact.html">Contact</a>
+            </li>
+        </ul>      
     </nav>
-    <div id="mainWrapper">
-        <div id="factotumWrapper">
-            <h2>factòtum</h2>
+
+    <div class="main-wrapper main-wrapper--rborder-orange">
+        <div class="main-wrapper__title-wrapper">
+            <h2 class="title--size5">factòtum</h2>
         </div> 
 
         <main>
@@ -48,19 +62,17 @@
                 <p>After all there’s a lot in that vegetarian fine flavour of things from the earth garlic of course it stinks after Italian organgrinders crisp of onions mushrooms truffles. Pain to the animal too. Pluck and draw fowl. Wretched brutes there at the cattlemarket waiting for the poleaxe to split their skulls open. Moo. Poor trembling calves. Meh. Staggering bob. Bubble and squeak. Butchers’ buckets wobbly lights. Give us that brisket off the hook. Plup. Rawhead and bloody bones. Flayed glasseyed sheep hung from their haunches, sheepsnouts bloodypapered snivelling nosejam on sawdust. Top and lashers going out. Don’t maul them pieces, young one.</p>
             </article>
         </main>
-        <footer>
-            <p>"After all there’s a lot in that vegetarian"</p>
+        <footer class="footer footer--bg-dark">
+            <p class="text--white">"After all there’s a lot in that vegetarian"</p>
         </footer>
     </div>
     
 
 
 <!-- Bootstrap 4 dependencies and insert-->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-        <!-- <script>
-            $(function(){$("#navigation").load("navigation.html");});</script> -->
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 </body>
 </html>
 
