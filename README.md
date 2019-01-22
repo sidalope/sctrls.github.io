@@ -18,5 +18,4 @@ TODO Features:
 * Responsive navigation at medium and larger screen sizes.
 
 TODO Issues:
-* Firefox dropdown menu magic-number correction.
-* Dropdown menu transition currently not supported in Safari.
+* Dropdown menu transition not supported in Safari.
