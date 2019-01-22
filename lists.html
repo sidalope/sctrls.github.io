@@ -1,38 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang= "en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Factotum Lists</title>
-</head>
-<body>
-    
-</body>
-</html>
 
-<!DOCTYPE html>
-<html>
-<head>
-<title></title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- Bootstrap 3 CSS-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<!-- Bootstrap 4 CSS-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-<link rel="stylesheet" href=".css">
+
+<title>Factotum Lists</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wilih=device-wilih, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Roboto+Slab|Staatliches" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat|Muli|Noto+Serif+JP|Playfair+Display|Raleway|Roboto+Mono|Slabo+27px|Source+Sans+Pro|Thasadith|Ubuntu|Yeseva+One|Assistant" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="styles/style-v030.css">
+    <link rel="stylesheet" href="styles/lists-style.css">
+
 </head>
 <body>
-<!-- Bootstrap 3 -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<!-- Bootstrap 4 -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-<srcript src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src=".js"></script>
+
+    <nav class="v-sidebar v-sidebar--dark">
+        <h1 class="v-sidebar__title nav-theme">
+            Alessandro Bisiani
+            <!-- <i class="fas fa-angle-double-down"></i> -->
+            <i class="fas fa-plus"></i>
+        </h1>
+        <ul class="v-sidebar__list v-sidebar--dark">
+            <li class="vertical-li">
+                <a class="nav-theme active" href="index.html">Blog</a>
+            </li>
+            <li class="vertical-li">
+                <a class="nav-theme" href="lists.html">Lists</a>
+            </li>
+            <li class="vertical-li dropdown">
+                <a class="nav-theme" href="#">Projects</a>
+                <div class="dropdown__nav-links">
+                    <a class="nav-theme" href="index-v010.html">ale.io V0.10</a>
+                    <a class="nav-theme" href="index-v011.html">ale.io V0.11</a>
+                    <a class="nav-theme" href="index-v020.html">ale.io V0.20</a>
+                </div>
+            </li>
+            <li class="vertical-li">
+                <a class="nav-theme" href="contact.html">Contact</a>
+            </li>
+        </ul>      
+    </nav>
+
+    <div class="main-wrapper main-wrapper--rborder-orange">
+        
+        <div class="main-wrapper__title-wrapper">
+            <h2 class="title-primary--size">factòtum</h2>			
+        </div>
+
+        <!-- Emmet abbr -->
+        <!-- section[class="list-section"]>h4[class="list-section__title"]+ul[class="list-section__list"]>li>a -->
+
+        <main>
+            <h3>Lists</h3>
+            
+            <section class="list-section">
+                <h4 class="list-section__title">Web Development</h4>
+                
+                <section class="list-section">
+                    <h4 class="list-section__title">Daily Dev</h4>
+                    <ul class="list-section__list">
+                        <li><a href="https://services.github.com/on-demand/downloads/github-git-cheat-sheet/">
+                            GitHub Git Cheat Sheet - On Demand Training</a>
+                        <li><a href="https://udacity.github.io/git-styleguide/">
+                            Udacity Nanodegree Style Guide</a>
+                        <li><a href="https://career-resource-center.udacity.com/linkedin-github-profiles/become-a-github-pro">
+                            Become a GitHub Pro</a>
+                        <li><a href="https://eu.udacity.com/course/front-end-interview-prep--ud250">
+                            Front-End Interview Prep | Udacity</a>
+                        <li><a href="https://eu.udacity.com/courses/applying-to-jobs">
+                            Free Courses and Nanodegree Programs | Udacity</a>
+                        <li><a href="https://classroom.udacity.com/courses/ud242">
+                            Strengthen Your LinkedIn Network &amp; Brand - Udacity</a>
+                        <li><a href="https://jobs.github.com/">
+                            GitHub Jobs</a>
+                        <li><a href="https://lab.github.com/courses">
+                            GitHub Learning Lab</a>
+                    </ul>
+                </section>
+                
+                <h6 class="list-section__title">General</h6> 
+                <ul class="list-section__list">                    
+                    <li><a href="https://www.udemy.com/the-web-developer-bootcamp/learn/v4/t/lecture/3861710?start=0">
+                        Webdev Bootcamp - Udemy</a>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web">
+                        MDN</a>
+                    <li><a href="https://www.html.it/pag/55171/ecmascript-6-e-il-supporto-dei-browser/">
+                        ES6 e il supporto dei browser | Guida JavaScript | HTML.it</a>                    
+                    <li><a href="http://nicolasgallagher.com/about-html-semantics-front-end-architecture/">
+                        About HTML semantics and front-end architecture – Nicolas Gallagher</a>                    
+                    <li><a href="https://try.github.io/">
+                        Resources to learn Git</a>
+                    <li><a href="https://www.creative-tim.com/bootstrap-cheat-sheet">
+                        Bootstrap 4 Cheat Sheet by Creative Tim and BootstrapBay</a>
+                    <li><a href="https://docs.emmet.io/cheat-sheet/">
+                        Emmet Cheat Sheet</a>
+                    <li><a href="https://www.html5accessibility.com/">
+                        HTML5 accessibility</a>
+                    <li><a href="https://unsplash.com/">
+                        Beautiful Free Images &amp; Pictures | Unsplash</a>
+                    <li><a href="https://docs.emmet.io/abbreviations/syntax/">
+                        abbreviations Syntax</a>
+                    <li><a href="http://pubs.opengroup.org/onlinepubs/009696899/utilities/xcu_chap02.html">
+                        Shell Command Language</a>
+                    <li><a href="http://uigradients.com/">
+                        uigradients.com</a>
+                    <li><a href="http://paperjs.org/">
+                        Paper.js</a>
+                    <li><a href="https://howlerjs.com/">
+                        howler.js - JavaScript audio library for the modern web</a>
+                    <li><a href="https://github.com/jonobr1/Neuronal-Synchrony">
+                        GitHub - jonobr1/Neuronal-Synchrony: a collection of two dimensional animations that are triggered by sound.</a>
+                    <li><a href="https://contrast-ratio.com/">
+                        Contrast Ratio: Easily calculate color contrast ratios. Passing WCaG was never this easy!</a>
+                    <li><a href="https://hackhands.com/how-to-get-started-on-the-mean-stack/">
+                        How to get started on the MEaN stack - HackHands</a>
+                    <li><a href="https://learngitbranching.js.org/">
+                        Learn Git Branching</a>
+                    <li><a href="https://github.com/udacity/ud777-writing-readmes">
+                        udacity/ud777-writing-readmes: Supplemental material for Udacity&#39;s &quot;Writing REaDMEs&quot; course</a>
+                    <li><a href="https://llos.co/">
+                        LLOS&amp; — Design-focused website development</a>
+                    <li><a href="https://choosealicense.com/">
+                        Choose an open source license | Choose a License</a>
+                </ul>
+
+                <h6 class="list-section__title">CSS</h6> 
+                <ul class="list-section__list">
+                    <li><a href="http://www.csszengarden.com/">
+                        CSS Zen Garden</a>
+                    <li><a href="https://www.udemy.com/the-web-developer-bootcamp/learn/v4/t/lecture/3861710?start=0">
+                        Webdev Bootcamp - Udemy</a>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web">
+                        MDN</a>
+                    <li><a href="https://cssguidelin.es/#specificity">
+                        CSS Guidelines (2.2.5) – High-level Advice And Guidelines For Writing Sane, Manageable, Scalable CSS</a>
+                    <li><a href="https://benfrain.com/fun-css-naming-convention-explained/">
+                        The ECSS Naming Convention Explained – By Ben Frain</a>
+                    <li><a href="https://en.bem.info/">
+                        BEM</a>
+                    <li><a href="https://css-tricks.com/bem-101/">
+                        BEM 101 | CSS-Tricks</a>
+                    <li><a href="https://css-tricks.com/autoprefixer/">
+                        Autoprefixer: A Postprocessor for Dealing with Vendor Prefixes in the Best Possible Way | CSS-Tricks</a>                        
+                    <li><a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">
+                        The media object saves hundreds of lines of code | Stubbornella</a>
+                    <li><a href="https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">
+                        MindBEMding – getting your head ’round BEM syntax – CSS Wizardry – CSS Architecture, Web Performance Optimisation, and more, by Harry Roberts</a>                         
+                    <li><a href="https://csswizardry.com/2011/09/the-nav-abstraction/">
+                        The ‘nav’ abstraction – CSS Wizardry – CSS Architecture, Web Performance Optimisation, and more, by Harry Roberts</a>
+                    <li><a href="https://csswizardry.com/2011/10/the-island-object/">
+                        The ‘island’ object – CSS Wizardry – CSS Architecture, Web Performance Optimisation, and more, by Harry Roberts</a>
+                    <li><a href="https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/">
+                        More Transparent UI Code with Namespaces – CSS Wizardry – CSS Architecture, Web Performance Optimisation, and more, by Harry Roberts</a>
+                    <li><a href="https://csswizardry.com/2015/03/immutable-css/">
+                        Immutable CSS – CSS Wizardry – CSS Architecture, Web Performance Optimisation, and more, by Harry Roberts</a>                    
+                    <li><a href="https://suitcss.github.io/">
+                        SUIT CSS: style tools for UI components</a>
+                    <li><a href="https://twitter.com/benfrain">
+                        Ben Frain (@benfrain) | Twitter</a>
+                    <li><a href="https://codepen.io/collection/nhowz/">
+                        Terrific Tables - a Collection by Team CodePen on CodePen</a>   
+                    <li><a href="https://jmperezperez.com/svg-placeholders/">
+                        Using SVG as placeholders — More Image Loading Techniques - José M. Pérez</a>
+                    <li><a href="https://codepen.io/collection/IDwnG/9/">
+                        Lined Menu Icons - a Collection by Team CodePen on CodePen</a>
+                    <li><a href="https://alistapart.com/article/css-positioning-101">
+                        CSS Positioning 101 · an a List apart article</a>
+                    <li><a href="https://css-tricks.com/video-screencasts/152-font-loading-zach-leatherman/">
+                        #152: Font Loading with Zach Leatherman | CSS-Tricks</a>
+                    <li><a href="https://24ways.org/2016/css-writing-modes/">
+                        CSS Writing Modes ◆ 24 ways</a>
+                    <li><a href="http://complexspiral.com/publications/containing-floats/">
+                        Containing Floats (Complex Spiral Consulting)</a>
+                    <li><a href="http://www.positioniseverything.net/easyclearing.html">
+                        Clearing a float container without source markup</a>
+                    <li><a href="https://www.w3schools.com/howto/howto_js_collapsible.asp">
+                        How To Create a Collapsible</a>
+                    <li><a href="https://alistapart.com/article/css-floats-101#section2">
+                        CSS Floats 101 · an a List apart article</a>
+                </ul>                   
+                
+                <h6 class="list-section__title">JS</h6>
+                <ul class="list-section__list">
+                    <li><a href="https://www.html.it/guide/guida-javascript-di-base/" >
+                        JavaScript, guida e tutorial per lo sviluppo web | HTML.it</a>
+                    <li><a href="https://www.javascript.com/">
+                        JavaScript.com</a>
+                    <li><a href="https://www.pluralsight.com/paths/javascript">
+                        JavaScript | Pluralsight</a>  
+                    <li><a href="https://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/">
+                        Function Declarations vs. Function Expressions – JavaScript, JavaScript…</a>                    
+                    <li><a href="https://davidwalsh.name/javascript-debounce-function">
+                        JavaScript Debounce Function</a>
+                    <li><a href="https://gruntjs.com/getting-started">
+                        Getting started - Grunt: The JavaScript Task Runner</a>              
+                    <li><a href="https://reactjs.org/">
+                        React – a JavaScript library for building user interfaces</a>
+                </ul>
+            </section>
+            
+            <section class="list-section">
+                <h4 class="list-section__title">Books 2019</h4>
+                <ul class="list-section__list">
+                    <li>The Journalist And The Murderer - Janet Malcolm</li>
+                    <li>In The Freud Archives - Janet Malcolm</li>
+                    <li>Il Momento È Delicato - Niccolò Ammaniti</li>
+                    <li>The Portable Nietzsche - Walter Kaufmann</li>
+                </ul>
+            </section>
+
+            <section class="list-section">
+                <h4 class="list-section__title">Books</h4>
+                <ul class="list-section__list">
+                        <li><a href="https://www.reddit.com/r/booklists/comments/gca4q/rbooklists_master_list/">r/booklists Master Reading List</a>
+                        <li><a href="https://www.facebook.com/barackobama/posts/10156393283416749">Barack Obama's 2018 Reading Highlights</a>
+                        <li><a href="https://www.reddit.com/r/books/comments/1mw58z/i_am_a_maths_and_physics_major_but_i_am_also_very/ccd840f/">r/books Classic Texts Thread </a>
+                </ul>
+            </section>
+
+        </main>
+
+        <footer class="footer footer--bg-dark">
+            <p class="footer__text footer__text--white">"After all there’s a lot in that vegetarian"</p>
+        </footer>
+    </div>
+
+    <script src=".js"></script>
 </body>
 </html>
