@@ -10,9 +10,14 @@ contact information.
 * Any thoughts and questions concerning the development 
     which are too short or specific to become a blog post.
  
+
 ## TODO Issues:
+### v1.0:
+* Footer positioning  on larger screen sizes
+
 #### Related to what is now v2.0+:
 * Dropdown menu transition not supported in Safari.
+
 
 ## TODO Features:
 ### v1.0:
@@ -29,6 +34,7 @@ contact information.
 * Cross browser support. TODO research.
 * Design for screen widths below 320px? TODO research.
 * ~~Responsive navigation at medium and larger screen sizes.~~
+
 
 ## Prescient Log
 Version #, Name| Contents

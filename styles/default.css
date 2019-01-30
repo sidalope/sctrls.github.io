@@ -1,11 +1,24 @@
 /* 
-Original:
+Adapted by Alessandro Bisiani from the original:
 html5doctor.com Reset Stylesheet
 v1.6.1
 Last Updated: 2010-09-17
 Author: Richard Clark - http://richclarkdesign.com 
 Twitter: @rich_clark
 */
+
+/* border: solid 1px #ee3e64; */
+    /* #44accf sky blue*/
+    /* #b7d84b */
+    /* #ec008c hot pink*/
+    /* #ffa719; Bright orange */
+    /* #fc6767 Light orange */
+    /* #12a7d light blue */
+    /* #00e8b9 bright teal */
+    /* #fcfcfc grey */
+    /* #262626; dark grey /
+    /* #505050; lighter dark grey */
+   
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -28,16 +41,29 @@ time, mark, audio, video {
     background:transparent;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
-    font-weight: 400;
+    font-weight: 350;
+    letter-spacing: 1px;
     line-height: 1.6;
+    background-color: #fcfcfc;
     font-family:  "Lora", "Courier New", Courier, monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Staatliches", Verdana, Geneva, sans-serif;
 }
-
+h3 {
+    font-size: 1.3rem;
+}
+   
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section { 
     display:block;
@@ -53,12 +79,35 @@ q:before, q:after {
     content:none;
 }
 
+h1,
+h2 {
+    color: #ee3e64;
+    color: #ffa719;
+    color: #ffe819;
+    color: black;
+}
+
+
+
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: inherit;
+    text-decoration: none;
+    /* color: #ffa719;
+    color: #ee3e64;
+    color: #fd5d93;
+    color: #44accf; */
+    color: #ffe819;
+}
+a:hover{
+    text-decoration: underline #fd5d93;
+    /* color: #44accf;
+    color: violet;
+    color: #ee3e64;
+    color: #fd5d93; */
 }
 
 /* change colours to suit your needs */
@@ -81,8 +130,8 @@ del {
 }
 
 abbr[title], dfn[title] {
-    /* border-bottom:1px dotted;
-    cursor:help; */
+    /* border-bottom:1px dotted; */
+    cursor:help;
 }
 
 table {
@@ -102,4 +151,19 @@ hr {
 
 input, select {
     vertical-align:middle;
+}
+
+
+
+main{
+    grid-area: main;
+    margin: 3em 0;
+}
+
+article{
+    margin-bottom: 5em;
+}
+
+p {
+    margin-top: 1em;
 }
