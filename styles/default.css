@@ -157,7 +157,6 @@ input, select {
 
 main{
     grid-area: main;
-    margin: 3em 0;
 }
 
 article{
