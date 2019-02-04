@@ -152,18 +152,21 @@
     width: 100%;
     justify-content: center;
     margin: 5em 0;
+    flex-flow: column nowrap;
 }
     .blog-wrap__article {
         max-width: 800px;
         margin: 0 0 3em 0;
     }
 
-
+.ul-style--none {
+    list-style-type: none;
+}
 
 .main-wrapper {
     display: grid;
     width: 100vw;
-    grid-template-columns: 35px [left-gutter] auto [content] 80% [right-gutter] auto;
+    grid-template-columns: 35px [left-gutter] auto [content] 75% [right-gutter] auto;
     grid-template-rows: fit-content(30vh) auto minmax(min-content, 65vh) 5vh;
     row-gap: 2em;
     grid-template-areas:
