@@ -1,0 +1,17 @@
+.main-wrapper__gallery {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gallery-card {
+    margin-bottom: 7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery-card__img {
+    width: 100%;
+    max-width: 750px;
+    align-self: center;
+}
