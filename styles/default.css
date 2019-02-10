@@ -18,6 +18,14 @@ Twitter: @rich_clark
     /* #fcfcfc grey */
     /* #262626; dark grey /
     /* #505050; lighter dark grey */
+
+    /* 
+    color: #ee3e64;
+    color: #fd5d93; salmon
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.1),
+				 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+ */
    
 
 html, body, div, span, object, iframe,
@@ -61,6 +69,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Staatliches", Verdana, Geneva, sans-serif;
     margin-bottom: 0.5em;
+    color: #ee3e64;
 }
 h2 {
     font-size: 150%;
@@ -96,16 +105,6 @@ q:before, q:after {
     content:none;
 }
 
-h1,
-h2 {
-    color: #ee3e64;
-    color: #ffa719;
-    color: #ffe819;
-    color: black;
-}
-
-
-
 a {
     margin: 0;
     padding: 0;
@@ -118,9 +117,13 @@ a {
     color: #fd5d93;
     color: #44accf; */
     color: #ffe819;
+    color: #ee3e64;
+    border-bottom: #fd5d93;
 }
 a:hover{
-    text-decoration: underline #fd5d93;
+    /* text-decoration: underline #fd5d93;
+    text-decoration: underline #8e00cf; */
+    background-color: #9000d346;
     /* color: #44accf;
     color: violet;
     color: #ee3e64;
@@ -188,11 +191,14 @@ li{
     margin-bottom:0.1em;
 }
 
+
+
 .footer{
     grid-area: footer;
     display: flex;
     height: 5vh;
-    min-height: 50px;
+    min-height: 35px;
+    height: 35px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -204,19 +210,27 @@ li{
         border:0;
         outline:0;
     }
-    .footer--bg-dark {
-        background-color: #505050;
-    }
- 
+    
     .footer__text--white {
         color: #fcfcfc;
     }
 
+    .footer--bg-dark {
+        background-color: #444444;
+        background-color: rgba(68, 68, 68, 0.137);
+    }
+
 .title-primary {
     margin-bottom: 0rem;
+    
 }
 .title-primary--size {
     font-size: calc(3em + 6vw);
+}
+
+.link-dark {
+    color: #ee3e64;
+    background-color: rgb(255, 255, 0, 0.4);
 }
 
 .v-sidebar {
@@ -229,6 +243,7 @@ li{
 }
 .v-sidebar-right {
     background-color: #ffe819;
+    background-color: #ee3e64c4;
     width: 10px;
     right: 0;
     display: none;
@@ -237,12 +252,13 @@ li{
     display: flex;
     width: 35px;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     overflow: hidden;
 }
     .v-sidebar--dark {
-        background-color: #505050;
+        background-color: #444444;
+        background-color: rgba(68, 68, 68, 0.137);
     }
 
     .v-sidebar__title {
@@ -255,14 +271,26 @@ li{
         font-weight: 500;
         color: #fcfcfc;
         color: #ffa719;
-        color: #ee3e64;
-        color: yellow;
         color: #ffe819;
+        color: #fd5d93;
+        color: #ee3e64;
     }
  
-.vertical-li{
+.nav-li{
     display: inline;
-    margin: 0.5em 0;
+    writing-mode: vertical-rl;
+    margin: 1em 0;
+    font-size: 1.5em;
+    color: #ee3e64;
+}
+.nav-li::before{
+    content: "*";
+    color: #ffe819;
+    color: #ee3e64;
+}
+
+.nav-theme {
+    font-family: "Staatliches", Verdana, Geneva, sans-serif;
 }
 
 .main-wrapper__social-n-skills {
@@ -291,9 +319,11 @@ li{
         .skills-list__item {
             padding: 0 1em;
             list-style: none;
+            
+            text-align: center;
         }
         .skills-list__item::before{
-            content:"~";
+            content:"*";
         }
 
 .main-wrapper__blog-wrap {
@@ -328,7 +358,7 @@ li{
     display: grid;
     width: 100vw;
     grid-template-columns: 35px [left-gutter] auto [content] 75% [right-gutter] auto;
-    grid-template-rows: fit-content(30vh) auto minmax(min-content, 65vh) 5vh;
+    grid-template-rows: fit-content(30vh) auto minmax(min-content, 65vh) 3vh;
     row-gap: 2em;
     grid-template-areas:
         ". . title ."
@@ -342,38 +372,11 @@ li{
         justify-content: center;
         align-items: center;
     }
-    /* .main-wrapper--rborder-yellow {
-        border-right: 30px solid #ffe819;
-    } */
 
     /* Safari and Chrome */
     /* body::-webkit-scrollbar { 
         display: none;  
     } */
-
-    
- 
-
-@media only screen and (min-width:600px){
-    .skills-list {
-        columns: 3;
-    }
-    .v-sidebar-right {
-        display: inline;
-    }
-}
-@media only screen and (min-width:800px){
-    .skills-list {
-        columns: 4;
-    }
-}
-@media only screen and (min-width:950px){
-    .skills-list {
-        display: flex;
-        justify-content: center;
-        padding: 0.5em;
-    }
-}
 
 /* DROPDOWN/POPOUT MENU CODE */
 /* 
